@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-toolbar class="ion-text-center">
+    <ion-title>WELCOME</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+
+<ion-slides [options]="slideOptions" pager="true" #slider (ionSlidesDidLoad)="slidesDidLoad(slider)">
+
+<ion-slide>
+    <img src="./assets/dhea.jpg">
+  </ion-slide>
+
+  <ion-slide>
+    <img src="./assets/flannel.jpg">
+  </ion-slide>
+
+  <ion-slide>
+    <img src="./assets/flannel2.jpg">
+  </ion-slide>
+        
+  <ion-slide>
+    <img src="./assets/haurabelle.jpg">
+  </ion-slide>
+
+  <ion-slide>
+    <img src="./assets/lola.jpg">
+  </ion-slide>
+
+  <ion-slide>
+    <img src="./assets/mulan.jpg">
+  </ion-slide>
+
+  <ion-slide>
+    <img src="./assets/reesa.jpg">
+  </ion-slide>
+
+  <ion-slide>
+    <img src="./assets/salenna.jpg">
+  </ion-slide>
+
+</ion-slides>
+
+
+<ion-card>
+  <ion-card-header>
+    <ion-card-subtitle>LOUNALULLABY</ion-card-subtitle>
+    <ion-card-title>About Us</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+   Lounalullaby was established in November 2020 as an online shopping business. It’s focusing on the fashion and trend industry through the generation. In a particular time and place and in a specific context, fashion is a common aesthetic term, particularly in clothing, footwear, lifestyle, accessories, makeup, hairstyle, and body proportions.
+  </ion-card-content>
+</ion-card>
+
+
+</ion-content>

@@ -1,0 +1,50 @@
+<ion-header>
+ <ion-toolbar color="light">
+ <ion-buttons slot="start">
+ <ion-back-button></ion-back-button>
+ </ion-buttons>
+ <ion-title class="ion-text-center">Contact</ion-title>
+ </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ <div class="ion-padding">
+ <ion-text color="primary">
+ <p>Please fill up enquiry and we will be in touch with you soon</p>
+ </ion-text>
+ <ion-item>
+ <ion-label position="floating">Name</ion-label>
+ <ion-input type="text" [(ngModel)]="post.name" required></ion-input>
+ </ion-item>
+ <ion-item>
+ <ion-label position="floating">Email</ion-label>
+ <ion-input type="email" placeholder="your@gmail.com" [(ngModel)]="post
+.email" required></ion-input>
+ </ion-item>
+
+<ion-item>
+  <ion-label>MM DD YY</ion-label>
+  <ion-datetime displayFormat="MM DD YY" placeholder="Select Date" okText="Okay" [(ngModel)]="post.date" cancelText="Dismiss"></ion-datetime>
+</ion-item>
+
+ <ion-item>
+ <ion-label>Item</ion-label>
+ <ion-select value="General" okText="Okay" [(ngModel)]="post.enquiry" c
+ancelText="Dismiss">
+ <ion-select-option value="Flannel">Flannel</ion-select-option>
+ <ion-select-option value="Blazer">Blazer</ion-select-option>
+ <ion-select-option value="Sabella">Sabella</ion-select-option>
+ <ion-select-option value="Haurabelle">Haurabelle</ion-select-option>
+ </ion-select>
+ </ion-item>
+
+ <ion-item>
+ <ion-label position="floating">Message</ion-label>
+ <ion-input [(ngModel)]="post.message"></ion-input>
+ </ion-item>
+ <ion-button expand="block" color="light" (click)="createPost(post)" (click)="submit()">
+ <ion-icon slot="start" name="send"></ion-icon>
+ Send
+ </ion-button>
+ </div>
+</ion-content>
